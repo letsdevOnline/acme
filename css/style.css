@@ -1,0 +1,150 @@
+body{
+    background-color : gray ;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    box-sizing: border-box;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: orangered;
+}
+header{
+    background: rgb(71, 71, 71);
+    height: 50px;
+    border-bottom: 2px solid orangered;
+}
+.header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.header ul{
+    display: flex;
+}
+nav li{
+    margin-left: 15px;
+}
+.logo span{
+    color: orangered;
+}
+section{
+    height: 255px;
+    background-image: url(../image/pic.png);
+
+}
+.section{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section h1{
+    font-size: 35px;
+    line-height: 1.;
+}
+.section p{
+    margin-top: 25px;
+}
+aside{
+    background: rgb(71, 71, 71);
+    height: 60px;
+}
+.aside{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputs button{
+    height: 30px;
+    padding: 5px 15px;
+    color: white;
+    background: orangered;
+    border: none;
+    margin-left: 7px;
+}
+.inputs button:hover{
+
+    color: orangered;
+    background: white;
+    border: 1px dotted orangered;
+    margin-left: 5px;
+}
+.inputs input{
+    padding: 0px 5px;
+    height: 30px;
+    border: none;
+}
+main{
+    color: black;
+    background: white;
+}
+.main{
+    padding: 5px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.main img{
+    width: 80px;
+    margin-bottom: 7px;
+}.box{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+footer{
+    background: orangered;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width:768px){
+    header{
+        height: 70px;
+    }
+    .header{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    aside{
+        height: 70px;
+    }
+    .aside{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .inputs{
+        margin-bottom: 2px;
+    }
+    .main{
+        flex-direction: column;
+    }
+}
